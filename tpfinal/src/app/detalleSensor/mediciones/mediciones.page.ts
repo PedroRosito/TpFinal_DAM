@@ -4,9 +4,6 @@ import { NavController } from '@ionic/angular';
 import { MedicionesService } from 'src/app/services/mediciones.service';
 import { ViewEncapsulation } from '@angular/core';
 
-export interface Config {
-	technologies: string;
-}
 
 @Component({
   selector: 'app-mediciones',
@@ -17,7 +14,6 @@ export interface Config {
 export class MedicionesPage implements OnInit {
 
 
-  public config : Config;
   public columns : any;
   public rows : any;
   private disId:number;

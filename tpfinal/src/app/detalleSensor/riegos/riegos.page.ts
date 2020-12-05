@@ -5,9 +5,6 @@ import { LogriegosService } from 'src/app/services/logriegos.service';
 import { ViewEncapsulation } from '@angular/core';
 import { of } from 'rxjs';
 
-export interface Config {
-	technologies: string;
-}
 
 @Component({
   selector: 'app-riegos',
@@ -17,7 +14,6 @@ export interface Config {
 })
 export class RiegosPage implements OnInit {
 
-  public config : Config;
   public columns : any;
   public rows : any;
   private disId:number;
