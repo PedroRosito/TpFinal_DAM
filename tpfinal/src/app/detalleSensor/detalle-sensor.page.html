@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>detalleSensor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <div id="highcharts" style="width:100%; height:300px;"></div>
+      <ion-button *ngIf="!elecVal, else cerrar" expand="block" (click)="openElecVal()">
+       <p appChangeColor> Abrir Electroválvula</p>
+      </ion-button>
+    <ng-template #cerrar>
+        <ion-button expand="block" (click)="closeElecVal()">
+        <p appChangeColor> Cerrar Electroválvula</p>
+        </ion-button>
+    </ng-template>
+      <ion-button expand="block" routerLink="mediciones">
+       <p appChangeColor> Ver todas las mediciones </p>
+      </ion-button>
+      <ion-button expand="block" routerLink="riegos">
+       <p appChangeColor> Ver log riegos </p>
+      </ion-button>
+  </ion-card>
+</ion-content>

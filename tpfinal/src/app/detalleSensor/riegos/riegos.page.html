@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>riegos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+
+    <!-- Theme classes dark, material, bootstrap -->
+    <ngx-datatable 
+      class="bootstrap"
+      [limit]="8" 
+      [rows]="rows" 
+      [rowHeight]="50" 
+      [columns]="columns"
+      [columnMode]="'force'" 
+      [sortType]="'multi'" 
+      [headerHeight]="50" 
+      [footerHeight]="50">
+      <ngx-datatable-column prop="logRiegoId"></ngx-datatable-column>
+      <ngx-datatable-column name="apertura">
+        <ng-template let-value="value" ngx-datatable-cell-template>
+          {{value | changeApertura}}
+        </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column name="fecha"></ngx-datatable-column>
+      <ngx-datatable-column name="electrovalvulaId"></ngx-datatable-column>
+    </ngx-datatable>
+
+  </div>
+</ion-content>
