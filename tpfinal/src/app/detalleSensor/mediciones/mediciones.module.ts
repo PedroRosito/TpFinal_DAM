@@ -8,6 +8,7 @@ import { MedicionesPageRoutingModule } from './mediciones-routing.module';
 
 import { MedicionesPage } from './mediciones.page';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { ChangeDatePipe } from 'src/app/pipes/change-date.pipe';
 
 @NgModule({
   imports: [
@@ -17,6 +18,6 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
     NgxDatatableModule,
     MedicionesPageRoutingModule
   ],
-  declarations: [MedicionesPage]
+  declarations: [MedicionesPage, ChangeDatePipe]
 })
 export class MedicionesPageModule {}

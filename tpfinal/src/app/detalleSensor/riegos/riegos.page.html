@@ -10,7 +10,7 @@
     <!-- Theme classes dark, material, bootstrap -->
     <ngx-datatable 
       class="bootstrap"
-      [limit]="8" 
+      [limit]="10" 
       [rows]="rows" 
       [rowHeight]="50" 
       [columns]="columns"
@@ -24,7 +24,11 @@
           {{value | changeApertura}}
         </ng-template>
       </ngx-datatable-column>
-      <ngx-datatable-column name="fecha"></ngx-datatable-column>
+      <ngx-datatable-column name="fecha">
+        <ng-template let-value="value" ngx-datatable-cell-template>
+          {{value | changeDate}}
+        </ng-template>
+      </ngx-datatable-column>
       <ngx-datatable-column name="electrovalvulaId"></ngx-datatable-column>
     </ngx-datatable>
 

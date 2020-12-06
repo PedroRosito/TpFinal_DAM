@@ -9,6 +9,7 @@ import { RiegosPageRoutingModule } from './riegos-routing.module';
 import { RiegosPage } from './riegos.page';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { ChangeAperturaPipe } from 'src/app/pipes/change-apertura.pipe';
+import { ChangeDatePipe } from 'src/app/pipes/change-date.pipe';
 
 
 @NgModule({
@@ -19,6 +20,6 @@ import { ChangeAperturaPipe } from 'src/app/pipes/change-apertura.pipe';
     NgxDatatableModule,
     RiegosPageRoutingModule
   ],
-  declarations: [RiegosPage, ChangeAperturaPipe]
+  declarations: [RiegosPage, ChangeAperturaPipe, ChangeDatePipe]
 })
 export class RiegosPageModule {}
