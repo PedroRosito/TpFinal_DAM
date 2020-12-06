@@ -37,6 +37,7 @@ Una vez realizadas todas las instalaciones necesarias seguir los siguientes paso
 2. Abrir una ventana de comandos dentro de la carpeta TpFinal_DAM y correr `docker-compose up`.
 3. Abrir una ventana de comandos dentro de la carpeta /tpfinal_API y correr el comando `node index.js`.
 4. Finalmente abrir una ventana de comandos dentro de la carpeta /ionicapp_DAM y correr el comando `ionic serve`.
+
 <br> Si todo funcionó correctamente se abrirá una ventana en su explorador por defecto mostrando una lista de sensores.
 
 # Trabajo futuro
