@@ -29,13 +29,13 @@ Una vez clonado el repositorio será necesaria correr los siguientes comandos en
 # Para correr el proyecto
 
 Una vez realizadas todas las instalaciones necesarias seguir los siguientes pasos respetando el orden:
-1. Crear un proyecto de ionic en blanco con el siguiente comando `ionic start ionicapp_DAM blank` y copiar todo el contenido de la carpeta /tpfinal dentro de la carpeta generada por el comando (/ionicapp_DAM).
+1. Crear un proyecto de ionic en blanco dentro de la carpeta TpFinal_DAM con el siguiente comando `ionic start ionicapp_DAM blank`, durante la creación del proyecto cuando consulte por el framework de javascript a utilizar, seleccionar Angular, cuando pregunte si se desea utilizar capacitor, decir que no. Una vez creado el proyecto copiar todo el contenido de la carpeta /tpfinal dentro de la carpeta generada por el comando (/ionicapp_DAM).
 2. En la carpeta /ionicapp_DAM correr los siguientes comandos:
    - `npm i moment --save`
    - `npm i @swimlane/ngx-datatable --save`
    - `npm i highcharts --save`
-3. Abrir una ventana de comandos dentro de la carpeta TpFinal_DAM y correr `docker-compose up`.
-4. Abrir una ventana de comandos dentro de la carpeta /tpfinal_API y correr el comando `node index.js`.
+3. Abrir una ventana de comandos dentro de la carpeta TpFinal_DAM y correr `docker-compose up`, esperar a que termine y dejarlo funcionando.
+4. Abrir una ventana de comandos dentro de la carpeta /tpfinal_API y correr el comando `node index.js` y dejarlo funcionando.
 5. Finalmente abrir una ventana de comandos dentro de la carpeta /ionicapp_DAM y correr el comando `ionic serve`.
 
 <br> Si todo funcionó correctamente se abrirá una ventana en su explorador por defecto mostrando una lista de sensores.
