@@ -109,15 +109,15 @@ INSERT INTO DAM.Dispositivos (nombre,ubicacion,electrovalvulaId) VALUES ('Sensor
 INSERT INTO DAM.Dispositivos (nombre,ubicacion,electrovalvulaId) VALUES ('Sensor 6', 'Habitacion 2',6);
 
 
-INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES (current_timestamp(),60,1 );
-INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES (current_timestamp(),40,1 );
-INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES (current_timestamp(),30,2 );
-INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES (current_timestamp(),50,3 );
-INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES (current_timestamp(),33,5 );
-INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES (current_timestamp(),17,4 );
-INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES (current_timestamp(),29,6 );
-INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES (current_timestamp(),20,1 );
-INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES (current_timestamp(),44,4 );
-INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES (current_timestamp(),61,5 );
-INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES (current_timestamp(),12,2 );
+INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES ('2020-12-5 12:00:00',60,1 );
+INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES ('2020-12-5 12:00:01',40,1 );
+INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES ('2020-12-5 12:00:02',30,2 );
+INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES ('2020-12-5 12:00:03',50,3 );
+INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES ('2020-12-5 12:00:04',33,5 );
+INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES ('2020-12-5 12:00:05',17,4 );
+INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES ('2020-12-5 12:00:06',29,6 );
+INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES ('2020-12-5 12:00:07',20,1 );
+INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES ('2020-12-5 12:00:08',44,4 );
+INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES ('2020-12-5 12:00:09',61,5 );
+INSERT INTO DAM.Mediciones (fecha,valor,dispositivoId) VALUES ('2020-12-5 12:00:10',12,2 );
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
