@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import * as Highcharts from 'highcharts';
+import * as moment from 'moment';
 import { Medicion } from '../model/medicion';
 import { Riego } from '../model/riego';
 import { LogriegosService } from '../services/logriegos.service';
@@ -39,19 +40,24 @@ export class DetalleSensorPage implements OnInit {
 
   openElecVal() {
     this.elecVal = true;
-    var date = new Date().toISOString().slice(0, 19).replace('T', ' ');
-    var riego: Riego = new Riego(1,date,1,this.idSensor);
+    var riego: Riego = new Riego(1,moment().format("YYYY-MM-DD hh:mm:ss"),1,this.idSensor);
     this.logriego.postLog(riego);
   }
 
   closeElecVal() {
     this.elecVal = false;
-    var date = new Date().toISOString().slice(0, 19).replace('T', ' ');
-    var riego: Riego = new Riego(1,date,0,this.idSensor);
+    var riego: Riego = new Riego(1,moment().format("YYYY-MM-DD hh:mm:ss"),0,this.idSensor);
     var newValor = Math.floor(Math.random() * ((this.valorObtenido) + 1));
-    var newMed: Medicion = new Medicion(1,date,newValor,this.idSensor);
+    var newMed: Medicion = new Medicion(1,moment().format("YYYY-MM-DD hh:mm:ss"),newValor,this.idSensor);
     this.medicion.postMedicion(newMed);
     this.logriego.postLog(riego);
+    this.myChart.update({series: [{
+      name: 'kPA',
+      data: [newValor],
+      tooltip: {
+          valueSuffix: ' kPA'
+      }
+    }]});
   }
 
   async getElecState() {

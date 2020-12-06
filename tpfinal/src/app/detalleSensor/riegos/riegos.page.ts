@@ -38,7 +38,7 @@ export class RiegosPage implements OnInit {
   ionViewDidEnter() {
       this.disId = Number(this.actRout.snapshot.paramMap.get('sensorID'));
       this.riegoService.getAllLogs(this.disId).then(
-        (logriego) => {this.rows = logriego}
+        (logriego) => {this.rows = logriego;}
       )
       }
 }

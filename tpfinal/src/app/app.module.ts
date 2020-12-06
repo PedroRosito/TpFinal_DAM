@@ -10,11 +10,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
-import { ChangeAperturaPipe } from './pipes/change-apertura.pipe';
 
 
 @NgModule({
-  declarations: [AppComponent,ChangeAperturaPipe],
+  declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, NgxDatatableModule],
   providers: [
