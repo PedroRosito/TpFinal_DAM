@@ -19,12 +19,12 @@
       [headerHeight]="50" 
       [footerHeight]="50">
       <ngx-datatable-column prop="medicionId"></ngx-datatable-column>
+      <ngx-datatable-column name="valor"></ngx-datatable-column>
       <ngx-datatable-column name="fecha">
         <ng-template let-value="value" ngx-datatable-cell-template>
           {{value | changeDate}}
         </ng-template>
       </ngx-datatable-column>
-      <ngx-datatable-column name="valor"></ngx-datatable-column>
       <ngx-datatable-column name="dispositivoId"></ngx-datatable-column>
     </ngx-datatable>
 

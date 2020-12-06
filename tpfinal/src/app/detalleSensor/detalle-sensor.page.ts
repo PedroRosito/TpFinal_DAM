@@ -40,15 +40,15 @@ export class DetalleSensorPage implements OnInit {
 
   openElecVal() {
     this.elecVal = true;
-    var riego: Riego = new Riego(1,moment().format("YYYY-MM-DD hh:mm:ss"),1,this.idSensor);
+    var riego: Riego = new Riego(1,moment().format("YYYY-MM-DD HH:mm:ss"),1,this.idSensor);
     this.logriego.postLog(riego);
   }
 
   closeElecVal() {
     this.elecVal = false;
-    var riego: Riego = new Riego(1,moment().format("YYYY-MM-DD hh:mm:ss"),0,this.idSensor);
+    var riego: Riego = new Riego(1,moment().format("YYYY-MM-DD HH:mm:ss"),0,this.idSensor);
     var newValor = Math.floor(Math.random() * ((this.valorObtenido) + 1));
-    var newMed: Medicion = new Medicion(1,moment().format("YYYY-MM-DD hh:mm:ss"),newValor,this.idSensor);
+    var newMed: Medicion = new Medicion(1,moment().format("YYYY-MM-DD HH:mm:ss"),newValor,this.idSensor);
     this.medicion.postMedicion(newMed);
     this.logriego.postLog(riego);
     this.myChart.update({series: [{
