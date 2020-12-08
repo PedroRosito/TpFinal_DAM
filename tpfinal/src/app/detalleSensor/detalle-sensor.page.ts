@@ -31,9 +31,12 @@ export class DetalleSensorPage implements OnInit {
 
   }
 
-  ionViewDidEnter() {
+  ionViewWillEnter(){
     this.idSensor = Number(this.actRout.snapshot.paramMap.get('sensorID'));
     this.getElecState();
+  }
+
+  ionViewDidEnter() {
     this.setNewValue();
     this.generarChart();
   }
